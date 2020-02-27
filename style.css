@@ -2,3 +2,36 @@ body{
     background: url("piza.JPG") no-repeat fixed center;
     background-size: cover;
 }
+
+
+
+
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: url("piza.jpg") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+#menu{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 20px;   
+    padding: 15px;
+    color: white;
+}
+#menu a:hover{
+    color: black;
+    background-color: white;
+}
+.nav{
+    margin-top: 12px;
+}
+    
+
