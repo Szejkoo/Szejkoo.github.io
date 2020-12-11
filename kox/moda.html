@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="../kox/coat.jpg">
+    <meta charset="UTF-8">
+    <title>Gucci, Louis Vuitton, Supreme</title>
+    <link rel="stylesheet" href="../css/moda.css">
+</head>
+<body>
+
+
+    
+    <div class="selection-top">
+    </div>
+
+    
+    <h4>Moda - występuje we wszystkich kulturach, w których ubiór ma dodatkowe funkcje poza użytecznością. Źródłem mody jest potrzeba ozdabiania i wyróżniania się. Jej genezę wywodzi się z protokapitalistycznych miast włoskich z okresu wczesnego renesansu. Na jej upowszechnienie wpływ miało rywalizujące z arystokracją mieszczaństwo. Jako czynniki wpływające na wykształcanie się mody Thorstein Veblen i Georg Simmel wskazywali stratyfikację społeczną nowoczesnego społeczeństwa, ponieważ moda stawała się w nim elementem dystynkcji statusowej.
+    </h4>
+
+    <p>Przykładowe rzeczy drogich marek
+    </p>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+        $(function() {
+            
+            var documentEl = $(document),
+                fadeElem = $('.selection-top');
+            
+            
+            documentEl.on('scroll', function() {
+                var currScrollPos = documentEl.scrollTop();
+                
+                fadeElem.each(function() {
+                    var $this = $(this),
+                        elemOffsetTop = $this.offset().top;
+                    if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                }); 
+            });
+            
+        });
+    
+    </script>
+
+    <img src="torebka.jpg" width="350" height="350"> </img>
+    <img src="torebkag.jpg" width="300" height="350"> </img>
+
+
+    <a href="pogu.html" style="text-decoration: none">Cofnij</a>
+
+
+
+
+
+</body>
+</html>
