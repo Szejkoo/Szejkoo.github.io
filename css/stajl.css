@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+.glowa{
+    background: #272727;
+    padding: 10px;
+    height: 40px;
+}
+
+.cialo{
+ height: 100vh;
+ width: 100%;
+ background-color: rgb(0, 0, 0);
+
+
+}
+
+p{
+  color: white;
+  margin: 100px;
+}
+
+.stopa{    
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background: #272727;
+
+}
+.loader1{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0,0, 1);
+  z-index: 9999;
+}
+.loader{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent,transparent 40%, #e5f403);
+  animation: animate123 2s linear infinite;
+}
+@keyframes animate123{
+  0%{
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg)
+  }
+}
+.loader::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.loader::after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(45deg, transparent,transparent 40%, #e5f403);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(30px);
+
+}
+
+
+
+#clock h2{
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.8em; 
+  margin-top: 150px;
+}
+#clock #time{
+  display: flex;
+  justify-content: center;
+}
+#clock #time div{
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 4px linear-gradient(
+      transparent,#0004);
+  
+}
+#clock #time div span{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 80px;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2); 
+}
+#clock #time div span:nth-child(2){
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+}
+#clock #time div:last-child span{
+  background: #ff006a;
+}
+#clock #time div:last-child span:nth-child(2){
+ background: #ec0062; 
+}
+
+
+
+
+.wavy{
+  position: relative;
+  -webkit-box-reflect: below -12px linear-gradient(
+    transparent, rgba(0,0,0,0.2));
+  margin-left: 770px;
+  margin-top: 10px;
+}
+.wavy span{
+  position: relative;
+  display: inline-block;
+  color: #127fd6;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate1 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate1{
+  0%{
+    transform: translateY(0px);
+  }
+  20%{
+    transform: translateY(-20px);
+  }
+  40%,100%{
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+#scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+}
+
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation:animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%,100%{
+    filter:hue-rotate(0deg) ;
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  filter: blur(30px);
+}
+#progressbar:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  filter: blur(30px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul.socialIcons {
+  padding: 0;
+  text-align: center;
+  background-color: #272727;
+  margin-block-start: 0px;
+  margin: 0px;
+
+}
+
+.socialIcons li {
+  background-color: yellow;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 1.28571429em;
+  max-width: 1.28571429em;
+  height: 1.28571429em;
+  white-space: nowrap;
+  line-height: 1.5em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 0.5em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .pinterest {
+  background-color: #c92228;
+  box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .steam {
+  background-color: #666666;
+  box-shadow: 0 0 16px #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

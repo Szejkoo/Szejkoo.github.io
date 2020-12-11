@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #131313;
+ }
+ .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+ }
+ .container .box{
+     position: relative;
+     width: 300px;
+     height: 400px;
+     margin: 40px;
+     background: #232323;
+     border-radius: 20px;
+     transform-style: preserve-3d;
+ }
+ .container .box::before{
+     content: 'Intel';
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     font-size: 6em;
+     font-weight: 900;
+     color: #fff;
+     font-style: italic;
+     opacity: 0;
+     transition: 0.5s;
+     margin-left: 40px;
+ }
+ .container .box::after{
+    content: 'procesor';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+    margin-bottom: 38px;
+    margin-right: -17px;
+}
+ .container .box:hover::before,
+ .container .box:hover::after{
+opacity: 0.04;
+ }
+ .container .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .name{
+    top: 40px;
+    opacity: 1;
+}
+.container .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform-style: preserve-3d;
+    transform: matrix3d(50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+.container .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+.container .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px) rotate(-15deg);
+}
+.container .box:hover .product{
+    transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .plyty{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+ }
+.container .plyty .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+ }
+.container .plyty .box::before{
+    content: 'Gigabyte';
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left: -19px;
+ }
+.container .plyty .box::after{
+    content: 'Plyta glowna';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 55px;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+    margin-bottom: 50px;
+    margin-right: -17px;
+}
+.container .plyty .box:hover::before,
+ .container .plyty .box:hover::after{
+opacity: 0.04;
+ }
+.container .plyty.box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+ }
+.container .plyty .box:hover .name{
+    top: 40px;
+    opacity: 1;
+ }
+.container .plyty .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform-style: preserve-3d;
+    transform: matrix3d(50%,0,75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .plyty .box:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+.container .plyty .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%,-50%,50px);
+}
+.container .plyty .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px) rotate(-15deg);
+}
+.container .plyty .box:hover .product{
+    transform: translate3d(-50%,-50%,100px) rotate(-15deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: consolas;
+}
+.button a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-bottom: 40px;
+}
+.button a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3 ;
+    transition-delay: 1s;
+}
+.button a span{
+    position: absolute;
+    display: block;
+}
+.button a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.button a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.button a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.button a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+
