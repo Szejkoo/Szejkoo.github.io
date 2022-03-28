@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+	<h1>Task</h1>
+	<p>Please download this file and prepare nice UI using provided data.<br>
+		For task you can use <a href="https://vuetifyjs.com/" target="_blank">Vuetify</a> with minimal (if any)
+		additional style.</p>
+	<p>In response please send this file with your UI proposal.</p> -->
+
+	<div id="app">
+		<h1>{{ workerList }}</h1>
+	</div>
+
+	<script>
+		new Vue({
+			data() {
+				return {
+					appTitle: 'Pierwsza aplikacja Vue!',
+				};
+			},
+		}).$mount('#app');
+	</script>
+
+
+	<script>
+		new Vue({
+			el: "#app",
+			vuetify: new Vuetify(),
+			data: {
+				workerList: [
+					{
+						"gender": "male",
+						"name": {
+							"first": "Brian",
+							"last": "Adams"
+						},
+						"location": {
+							"street": {
+								"number": 734,
+								"name": "Park Road"
+							},
+							"city": "Stoke-on-Trent",
+							"state": "County Fermanagh",
+							"country": "United Kingdom",
+							"postcode": "XR3 9EY",
+							"coordinates": {
+								"latitude": "18.0015",
+								"longitude": "-86.0374"
+							}
+						},
+						"email": "brian.adams@example.com",
+						"registered": "2008-11-07T11:53:14.120Z",
+						"phone": "015394 84142",
+						"cell": "0737-492-043",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/42.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/42.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "female",
+						"name": {
+							"first": "Izzie",
+							"last": "Lewis"
+						},
+						"location": {
+							"street": {
+								"number": 8255,
+								"name": "The Avenue"
+							},
+							"city": "Londonderry",
+							"state": "County Antrim",
+							"country": "United Kingdom",
+							"postcode": "MY2L 6XU",
+							"coordinates": {
+								"latitude": "8.3835",
+								"longitude": "-165.2342"
+							}
+						},
+						"email": "izzie.lewis@example.com",
+						"registered": "2002-11-15T03:25:56.986Z",
+						"phone": "016977 4085",
+						"cell": "0724-047-718",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/women/37.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/women/37.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Cody",
+							"last": "Kuhn"
+						},
+						"location": {
+							"street": {
+								"number": 734,
+								"name": "Park Road"
+							},
+							"city": "Stoke-on-Trent",
+							"state": "County Fermanagh",
+							"country": "United Kingdom",
+							"postcode": "XR3 9EY",
+							"coordinates": {
+								"latitude": "18.0015",
+								"longitude": "-86.0374"
+							}
+						},
+						"email": "cody.kuhn@example.com",
+						"registered": "2010-09-29T06:49:00.828Z",
+						"phone": "01200 69421",
+						"cell": "0783-755-349",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/2.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/2.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Nathaniel",
+							"last": "Watson"
+						},
+						"location": {
+							"street": {
+								"number": 3319,
+								"name": "Victoria Road"
+							},
+							"city": "Glasgow",
+							"state": "County Tyrone",
+							"country": "United Kingdom",
+							"postcode": "W2 2HU",
+							"coordinates": {
+								"latitude": "-20.8721",
+								"longitude": "-114.2121"
+							}
+						},
+						"email": "nathaniel.watson@example.com",
+						"registered": "2003-04-14T21:48:07.281Z",
+						"phone": "013873 95678",
+						"cell": "0730-343-076",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/81.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/81.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Ricardo",
+							"last": "Chapman"
+						},
+						"location": {
+							"street": {
+								"number": 3731,
+								"name": "Manchester Road"
+							},
+							"city": "Londonderry",
+							"state": "Somerset",
+							"country": "United Kingdom",
+							"postcode": "O8J 4NR",
+							"coordinates": {
+								"latitude": "-37.1195",
+								"longitude": "-78.8375"
+							}
+						},
+						"email": "ricardo.chapman@example.com",
+						"registered": "2007-01-01T17:38:32.166Z",
+						"phone": "017687 58960",
+						"cell": "0740-826-264",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/36.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/36.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "female",
+						"name": {
+							"first": "Patricia",
+							"last": "Alexander"
+						},
+						"location": {
+							"street": {
+								"number": 1138,
+								"name": "Grove Road"
+							},
+							"city": "Liverpool",
+							"state": "Dyfed",
+							"country": "United Kingdom",
+							"postcode": "Z15 2TT",
+							"coordinates": {
+								"latitude": "-34.4501",
+								"longitude": "-81.7062"
+							}
+						},
+						"email": "patricia.alexander@example.com",
+						"registered": "2008-08-14T04:04:00.735Z",
+						"phone": "015395 46775",
+						"cell": "0775-286-928",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/women/49.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/women/49.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "female",
+						"name": {
+							"first": "Amy",
+							"last": "Jackson"
+						},
+						"location": {
+							"street": {
+								"number": 6268,
+								"name": "Manchester Road"
+							},
+							"city": "Plymouth",
+							"state": "North Yorkshire",
+							"country": "United Kingdom",
+							"postcode": "BW8 2XY",
+							"coordinates": {
+								"latitude": "-39.7456",
+								"longitude": "0.9339"
+							}
+						},
+						"email": "amy.jackson@example.com",
+						"registered": "2012-11-10T19:53:15.592Z",
+						"phone": "017687 25568",
+						"cell": "0762-593-441",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/women/39.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/women/39.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Clifton",
+							"last": "Jacobs"
+						},
+						"location": {
+							"street": {
+								"number": 1138,
+								"name": "Grove Road"
+							},
+							"city": "Liverpool",
+							"state": "Dyfed",
+							"country": "United Kingdom",
+							"postcode": "Z15 2TT",
+							"coordinates": {
+								"latitude": "-34.4501",
+								"longitude": "-81.7062"
+							}
+						},
+						"email": "clifton.jacobs@example.com",
+						"registered": "2015-05-02T21:04:19.014Z",
+						"phone": "017684 26947",
+						"cell": "0705-776-434",
+						"isActive": false,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Adrian",
+							"last": "Hart"
+						},
+						"location": {
+							"street": {
+								"number": 1138,
+								"name": "Grove Road"
+							},
+							"city": "Liverpool",
+							"state": "Dyfed",
+							"country": "United Kingdom",
+							"postcode": "Z15 2TT",
+							"coordinates": {
+								"latitude": "-34.4501",
+								"longitude": "-81.7062"
+							}
+						},
+						"email": "adrian.hart@example.com",
+						"registered": "2016-07-16T19:18:19.396Z",
+						"phone": "016974 64899",
+						"cell": "0751-557-596",
+						"isActive": false,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/79.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/79.jpg"
+						},
+						"nationality": "GB"
+					},
+					{
+						"gender": "male",
+						"name": {
+							"first": "Ivan",
+							"last": "Mitchelle"
+						},
+						"location": {
+							"street": {
+								"number": 1028,
+								"name": "Broadway"
+							},
+							"city": "Nottingham",
+							"state": "County Tyrone",
+							"country": "United Kingdom",
+							"postcode": "P2 4TG",
+							"coordinates": {
+								"latitude": "17.5335",
+								"longitude": "73.7684"
+							}
+						},
+						"email": "ivan.mitchelle@example.com",
+						"registered": "2017-09-15T10:11:59.248Z",
+						"phone": "017683 17416",
+						"cell": "0712-900-947",
+						"isActive": true,
+						"picture": {
+							"medium": "https://randomuser.me/api/portraits/med/men/82.jpg",
+							"thumbnail": "https://randomuser.me/api/portraits/thumb/men/82.jpg"
+						},
+						"nationality": "GB"
+					}
+				]
+			},
+			computed: {
+				perState() {
+					return this.workerList.reduce((acc, i) => {
+						acc[i.location.state] = (acc[i.location.state] || 0) + 1;
+						return acc;
+					}, {});
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
